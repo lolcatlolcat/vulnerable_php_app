@@ -1,0 +1,12 @@
+---
+version: "3"
+services:
+  nginx:
+    image: trafex/alpine-nginx-php7
+    ports:
+      - "80:8080"
+      - "2222:22"
+    volumes:
+      - ./php/wish.php:/var/www/html/wish.php
+      - ./nginx/:/var/www/html/
+      - ./flag/flag.txt:/var/www/flag.txt

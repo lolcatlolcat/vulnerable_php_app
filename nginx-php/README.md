@@ -1,3 +1,3 @@
 ### Install Docker and Docker-Compose
-# docker-compose up -d
-# win
+-docker-compose up -d
+- win
